@@ -1,0 +1,14 @@
+1. Fake banking login (SQL injection style)
+    http://secure-login-bank.com/login?user=admin'--&pass=123
+2. Suspicious domain + hyphen
+    http://paypal-secure-update.com/verify
+3. Long URL hiding payload
+    http://account-update-security-check.com/verify/user/session/update/login/index.php?id=984723984723984723
+4. Using @ symbol (classic trick)
+    http://www.google.com@evil-login.com
+5. IP address instead of domain
+    http://192.168.0.1/login
+6. Long URL (tracking parameters)
+    https://www.amazon.in/gp/cart/view.html?ref_=nav_cart&session-id=123-4567890-1234567
+7. Many subdomains
+    https://accounts.google.com.oath2.secure-login.google.com/
